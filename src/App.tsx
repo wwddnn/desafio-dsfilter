@@ -1,11 +1,13 @@
+import Header from "./components/Header";
+import ListingBody from "./components/ListingBody";
 
 function App() {
-
   return (
     <>
-    <h1>Hello world!</h1>
+      <Header />
+      <ListingBody />
     </>
   );
 }
 
-export default App
+export default App;
