@@ -14,7 +14,7 @@
 - CONTEXT API (ESTADO GLOBAL)
 
 - OBS:
-- Context API: útil para compartilhar o estados em vários lugares da aplicação sem precisar ficar passando Props manualmente (Prop drilling). Ruim pois pode gerar perda de performance pois quando o value do Provider todos os componentes que consomem renderizam novamente.
+- Context API: útil para compartilhar o estados em vários lugares da aplicação sem precisar ficar passando Props manualmente (Prop drilling). Ruim pois pode gerar perda de performance pois quando o value do Provider muda, todos os componentes que consomem renderizam novamente.
 - Props: é mais simples e fácil de entender. Boa performance. Ruim é se o dado tiver que chegar em um componente profundo daí vai gerar Prop drilling com código repetitivo e confuso.
 
 ## ↗️TECNOLOGIAS: 
