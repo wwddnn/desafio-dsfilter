@@ -1,8 +1,9 @@
 ## 🎯SOBRE O PROJETO:
-- CONSTRUIR UM PROJETO BASEADO NO DESIGN DO FIGMA.
-- RESOLVER QUAL PROBLEMA? CLIENTE QUER FAZER UMA PESQUISA USANDO OS FILTROS DE VALORES PARA ACHAR O PREÇO MIN E MÁX DOS PRODUTOS. EXIBINDO OS PRODUTOS (NOME E PREÇO) EM FORMATO DE LISTAGEM DE PRODUTOS.
-- COMO FOI RESOLVIDO? OS CAMPOS DE INPUT (VALORES MIN E MÁX) SÃO ARMAZENADOS EM HOOK (USESTATE) E DEPOIS PASSADOS PARA O HOOK (USEEFFECT) REALIZAR A BUSCA DESSES PRODUTOS EM ORDEM DE PREÇO. ENTÃO ESSES PRODUTOS SÃO EXIBIDOS NA TELA.
-- OBS. ATRAVÉS DO CONTEXT API (ESTADO GLOBAL) O COMPONENTE HEADER CONSEGUE ATUALIZAR DINAMICAMENTE O NÚMERO DE PRODUTOS CONFORME MUDA A QUANTIDADE DE PRODUTOS NA LISTAGEM DE PRODUTOS.
+- Construir um projeto baseado no design do figma.
+- resolver qual problema? Cliente quer fazer uma pesquisa usando os filtros de valores para achar o preço min e máx dos produtos. Exibindo os produtos (nome e preço) em formato de listagem de produtos.
+- como foi resolvido? Os campos de input (valores min e máx) são armazenados em hook (usestate) e depois passados para o hook (useeffect) realizar a busca desses produtos em ordem de preço. Então esses produtos são exibidos na tela.
+- obs. Através do context api (estado global) o componente header consegue atualizar dinamicamente o número de produtos conforme muda a quantidade de produtos na listagem de produtos.
+
   
 ## ✅CONHECIMENTOS:
 - REACT COMPONENTS
@@ -11,6 +12,10 @@
 - REACT HOOKS (USESTATE, USEEFFECT, USECONTEXT)
 - EVENTOS
 - CONTEXT API (ESTADO GLOBAL)
+
+- OBS:
+- Context API: útil para compartilhar o estados em vários lugares da aplicação sem precisar ficar passando Props manualmente (Prop drilling). Ruim pois pode gerar perda de performance pois quando o value do Provider todos os componentes que consomem renderizam novamente.
+- Props: é mais simples e fácil de entender. Boa performance. Ruim é se o dado tiver que chegar em um componente profundo daí vai gerar Prop drilling com código repetitivo e confuso.
 
 ## ↗️TECNOLOGIAS: 
 - VSCODE IDE
