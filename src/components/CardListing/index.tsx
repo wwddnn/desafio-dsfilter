@@ -1,36 +1,23 @@
-import './styles.css';
+import type { ProductDTO } from "../../models/product";
+import "./styles.css";
 
-export default function CardListing() {
+type Props = {
+  products: ProductDTO[];
+};
 
-    return (
-        <div className="card-listing-container ml-120 mt-20">
-            <div className="card-listing-items">
-                <div className="card-listing-item mb-10">
-                    <h4>Pc Gamer Pro</h4>
-                    <p>R$ 1200.00</p>
-                </div>
-                <div className="card-listing-item mb-10">
-                    <h4>Pc Gamer Pro</h4>
-                    <p>R$ 1200.00</p>
-                </div>
-                <div className="card-listing-item mb-10">
-                    <h4>Pc Gamer Pro</h4>
-                    <p>R$ 1200.00</p>
-                </div>
-                <div className="card-listing-item mb-10">
-                    <h4>Pc Gamer Pro</h4>
-                    <p>R$ 1200.00</p>
-                </div>
-                <div className="card-listing-item mb-10">
-                    <h4>Pc Gamer Pro</h4>
-                    <p>R$ 1200.00</p>
-                </div>
-                <div className="card-listing-item mb-10">
-                    <h4>Pc Gamer Pro</h4>
-                    <p>R$ 1200.00</p>
-                </div>
-            </div>
-        </div>
-    );
+export default function CardListing({ products }: Props) {
+  return (
+    <div className="card-listing-container ml-120 mt-20">
+      <div className="card-listing-items">
+          {
+            products.map((product) => (
+              <div key={product.id} className="card-listing-item mb-10" >
+                <h4>{product.name} </h4>
+                <p>R$ {product.price.toFixed(2)}</p>
+              </div>
+            ))
+          }
+      </div>
+    </div>
+  );
 }
-    
