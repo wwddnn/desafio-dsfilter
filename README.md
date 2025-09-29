@@ -1,69 +1,37 @@
-# React + TypeScript + Vite
+## 🎯SOBRE O PROJETO:
+- CONSTRUIR UM PROJETO BASEADO NO DESIGN DO FIGMA.
+- RESOLVER QUAL PROBLEMA? CLIENTE QUER FAZER UMA PESQUISA USANDO OS FILTROS DE VALORES PARA ACHAR O PREÇO MIN E MÁX DOS PRODUTOS. EXIBINDO OS PRODUTOS (NOME E PREÇO) EM FORMATO DE LISTAGEM DE PRODUTOS.
+- COMO FOI RESOLVIDO? OS CAMPOS DE INPUT (VALORES MIN E MÁX) SÃO ARMAZENADOS EM HOOK (USESTATE) E DEPOIS PASSADOS PARA O HOOK (USEEFFECT) REALIZAR A BUSCA DESSES PRODUTOS EM ORDEM DE PREÇO. ENTÃO ESSES PRODUTOS SÃO EXIBIDOS NA TELA.
+- OBS. ATRAVÉS DO CONTEXT API (ESTADO GLOBAL) O COMPONENTE HEADER CONSEGUE ATUALIZAR DINAMICAMENTE O NÚMERO DE PRODUTOS CONFORME MUDA A QUANTIDADE DE PRODUTOS NA LISTAGEM DE PRODUTOS.
+  
+## ✅CONHECIMENTOS:
+- REACT COMPONENTS
+- TIPAGEM EM TYPESCRIPT
+- REACT PROPS
+- REACT HOOKS (USESTATE, USEEFFECT, USECONTEXT)
+- EVENTOS
+- CONTEXT API (ESTADO GLOBAL)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ↗️TECNOLOGIAS: 
+- VSCODE IDE
+- REACT.JS
+- TYPESCRIPT
+- JAVASCRIPT
+- HTML
+- CSS
 
-Currently, two official plugins are available:
+## 🤚DESENVOLVIDO POR:
+- Desafio e mentoria da escola Devsuperior
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Prints:
+<img width="876" height="882" alt="image" src="https://github.com/user-attachments/assets/30965721-13d0-4d9e-8d27-cad2c029a9ce" />
 
-## Expanding the ESLint configuration
+<img width="1178" height="875" alt="image" src="https://github.com/user-attachments/assets/0ac89cf5-bb48-4305-967b-32722d4bf2e6" />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
